@@ -4,7 +4,7 @@ package br.com.barbosa.rodrigo.codigodebarra.model;
  * Created by rodrigobarbosa on 21/08/17.
  */
 
-public class ListaScanners {
+public class Scanners {
 
     private int id;
     private String titulo;
