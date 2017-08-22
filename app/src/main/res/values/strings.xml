@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CodigoDeBarra</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+
+    <string name="action_sign_in">Logar</string>
+    <string name="action_sign_in_short">Login</string>
+
 </resources>
