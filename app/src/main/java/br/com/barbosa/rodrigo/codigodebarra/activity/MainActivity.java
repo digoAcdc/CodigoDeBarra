@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,9 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     IntentIntegrator integrator = null;
+    @BindView(R.id.llCodigoBarra)
+    LinearLayout llCodigoBarra;
+
     @BindView(R.id.etCodigoBarra)
     EditText etCodigoBarra;
 
@@ -31,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.etCodigoBarra)
+    @OnClick(R.id.llCodigoBarra)
     protected void onClickLerCodigoDeBarras(){
         integrator = new IntentIntegrator(MainActivity.this);
         integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
